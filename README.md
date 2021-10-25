@@ -5,7 +5,7 @@ Welcome to the take home technical test, please read through this file before st
 -   Create an API endpoint to fetch a single hotel by ID with reviews (if any).
 
     -   **DO** return the response as JSON.
-    -   The response **SHOULD** include:
+    -   The response **SHOULD** only include:
 
         -   The name of the hotel.
         -   The hotel star rating.
