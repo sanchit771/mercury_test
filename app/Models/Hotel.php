@@ -71,7 +71,12 @@ class Hotel extends Model
     /** Setting accessor to get proper hotel ratings */
     public function getHotelRatingAttribute($value)
     {
-       return $this->attributes['hotel_rating'] = $value.' Stars';
+        if($value<=1){
+            $text = 'Star';
+        }else{
+            $text = 'Stars';
+        }
+       return $this->attributes['hotel_rating'] = $value." ".$text;
     }
     
 }
